@@ -1,6 +1,5 @@
 import numpy as np
 import camb
-from camb import model
 import matplotlib.pyplot as plt
 
 #Set cosmology
@@ -30,4 +29,5 @@ matter_power = primordial_PK * transfer**2 * k**4 / (k**3 / (2 * np.pi**2))
 plt.loglog(kh, matter_power)
 plt.xlabel(r'$k[h Mpc^{-1}]$')
 plt.title('Matter power spectrum')
+
 plt.show()
